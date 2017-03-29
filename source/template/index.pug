@@ -1,0 +1,34 @@
+include common/_mixins
+doctype html
+html(lang="ru")
+	include common/_head
+	body
+		header
+			.container
+				.row
+					.col-md-3
+						p
+							| 1 ряд 3 колонки
+					.col-md-6
+						p
+							| 2 ряд 6 колонки
+					.col-md-3
+						p
+							| 3 ряд 3 колонки
+				.row
+					.col-md-3
+						p
+							a(href="http://htmlbook.ru/example/knob.html")
+								| ссылка
+
+					.col-md-6
+						p
+							| 2 ряд 6 колонки
+					.col-md-3
+						p
+							| 3 ряд 3 колонки
+
+
+				
+
+		include common/_footer-scripts
