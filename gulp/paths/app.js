@@ -2,5 +2,5 @@
 
 module.exports = {
   src: './source/js/',
-  bundles: ['app.js']
+  bundles: ['app.js', 'admin.js']
 };

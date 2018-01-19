@@ -14,8 +14,5 @@ Getting started:
 ### Примечание
 - добавлен модульный сборщик browserify
 - добавлен транспилер babel
-- добавлен bootstrap 4
-- добавлен animate.css
-- добавлен wow.js
-
+- добавлен nodemon
 ********

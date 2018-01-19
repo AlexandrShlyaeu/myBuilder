@@ -11,7 +11,7 @@ global.$ = {
     app: require('./gulp/paths/app.js')
   },
   gulp: require('gulp'),
-  rimraf: require('del'),
+  del: require('del'),
   merge: require('merge-stream'),
   browserify : require('browserify'),
   source : require('vinyl-source-stream'),
@@ -39,8 +39,10 @@ $.gulp.task('default', $.gulp.series(
     'js:process',
     'copy:image',
     'copy:font',
-    'css:foundation'
+    'css:foundation',
+    'create:version'
   ),
+  'nodemon',
   $.gulp.parallel(
     'watch',
     'serve'
