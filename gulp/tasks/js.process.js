@@ -20,7 +20,7 @@ module.exports = function() {
       })))
       .pipe($.gp.if(!$.dev, $.gp.uglify()))
       .pipe($.gp.if($.dev, $.gp.sourcemaps.write('./maps')))
-      .pipe($.gp.if(!$.dev, $.gp.rename({ suffix: '.min' })))
+      //.pipe($.gp.if(!$.dev, $.gp.rename({ suffix: '.min' })))
       .pipe($.gulp.dest($.config.root + '/assets/js'));
     });
 

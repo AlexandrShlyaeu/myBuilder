@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta content="" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/foundation.css">
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <script src="/assets/js/foundation.js" defer></script>
+    <script src="/assets/js/admin.js" defer></script><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="greating">
+      <div class="greating_text">Builder</div>
+      <div class="greating_picture"></div>
+    </div>
+    <div class="menu">
+      <ul class="menu__container">
+        <li class="menu__row"><a class="menu__link" href="/login"><span class="menu__subtitle">Авторизация</span></a></li>
+        <li class="menu__row"><a class="menu__link" href="/"><span class="menu__subtitle">Главная</span></a></li>
+        <li class="menu__row"><a class="menu__link" href="/blog"><span class="menu__subtitle">Блог</span></a></li>
+        <li class="menu__row"><a class="menu__link" href="/contact"><span class="menu__subtitle">Связаться со мной</span></a></li>
+      </ul>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="form-container">
+          <form class="form" id="upload" action="/upload" method="POST" enctype="multipart/form-data">
+            <div class="form__subtitle">Загрузите картинку на сервер</div>
+            <div class="status"></div>
+            <label class="form__input-line">
+              <input class="form__input" name="name" type="text" placeholder="Описание картинки" id="file-desc">
+            </label>
+            <label class="form__input-line">
+              <input class="form__input" name="photo" type="file" required accept="image/*" id="file-select">
+            </label>
+            <div class="form__btns form__input-line">
+              <input class="form__btn-send" name="" type="submit" value="Отправить">
+              <input class="form__btn-reset" name="" type="reset" value="Очистить">
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-container">
+          <form class="form" id="blog" method="POST">
+            <div class="form__subtitle">Добавить запись в блог</div>
+            <div class="status"> </div>
+            <label class="form__input-line">
+              <input class="form__input" name="title" type="text" placeholder="Заголовок">
+            </label>
+            <label class="form__input-line">
+              <input class="form__input" name="date" type="date" value="2018-01-19">
+            </label>
+            <textarea class="form__textarea" placeholder="Ваша запись" name="text"></textarea>
+            <div class="form__btns form__input-line">
+              <input class="form__btn-send" name="" type="submit" value="Отправить">
+              <input class="form__btn-reset" name="" type="reset" value="Очистить">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

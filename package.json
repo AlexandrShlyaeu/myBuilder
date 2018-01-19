@@ -1,13 +1,15 @@
 {
-  "name": "Builder",
-  "version": "0.0.1",
+  "name": "builder",
+  "version": "1.0.2",
   "author": "AlexandrSh",
   "license": "ISC",
-  "scripts": {},
+  "scripts": {
+    "postinstall": "bower install"
+  },
   "devDependencies": {
-    "babel-preset-es2015": "^6.24.1",
-    "babelify": "^8.0.0",
-    "browser-sync": "2.23.5",
+    "babel-preset-es2015": "^6.18.0",
+    "babelify": "^7.3.0",
+	  "browser-sync": "2.23.5",
     "browserify": "^15.2.0",
     "del": "^3.0.0",
     "gulp": "git+https://git@github.com/gulpjs/gulp.git#4.0",
@@ -30,27 +32,28 @@
     "gulp-svgmin": "^1.2.4",
     "gulp-uglify": "^3.0.0",
     "gulp.spritesmith": "^6.9.0",
-    "jquery": "^3.2.1",
     "merge-stream": "^1.0.1",
-    "tether": "^1.4.3",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0",
-    "gulp-nodemon": "^2.2.1"
+  	"gulp-nodemon": "^2.2.1",
+	  "tether": "^1.4.3",
+  	"node-sass": "^4.7.2",
+  	"jquery": "^3.2.1"
   },
   "dependencies": {
-    "body-parser": "^1.18.2",
-    "connect-mongo": "^2.0.1",
+    "body-parser": "^1.16.1",
+    "connect-mongo": "^1.3.2",
     "cookie-parser": "^1.4.3",
-    "debug": "^3.1.0",
-    "express": "^4.16.2",
-    "express-session": "^1.15.6",
+    "debug": "^2.6.1",
+    "express": "^4.14.1",
+    "express-session": "^1.15.1",
     "formidable": "^1.1.1",
-    "jsonfile": "^4.0.0",
-    "mongoose": "^5.0.0",
-    "morgan": "^1.9.0",
-    "nodemailer": "^4.4.1",
-    "normalize.css": "^7.0.0",
-    "pug": "^2.0.0-rc.4",
-    "serve-favicon": "^2.4.5"
+    "jsonfile": "^2.4.0",
+    "mongoose": "^4.8.6",
+    "morgan": "^1.8.1",
+    "nodemailer": "^3.1.4",
+    "normalize.css": "^4.1.1",
+    "pug": "^2.0.0-beta11",
+    "serve-favicon": "^2.4.0"
   }
 }

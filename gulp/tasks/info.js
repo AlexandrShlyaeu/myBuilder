@@ -28,7 +28,7 @@ function readDir(catalog, result) {
 
 module.exports = function () {
   $.gulp.task('info', function () {
-    return readDir('./build/', {}).then(function (data) {
+    return readDir('./public/', {}).then(function (data) {
       let size = 0;
       let count = 0;
       for (let i in data) {
